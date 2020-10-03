@@ -1,7 +1,8 @@
 <?php
     $tytle="minimalistica";
     $head="minimalistica";
-    $year=date(d.m.Y.);
+    $tell=date("d.m.Y");
+    $year1=date('Y');
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -13,7 +14,7 @@
 </head>
 <body>
 	<div id="content">
-		<h1><?= $head <br> $year?></h1>
+		<h1><?= $head; $tell;?></h1>
 		
 		<ul id="menu">
 			<li><a href="#">home</a></li>
@@ -50,7 +51,7 @@
 		</div>
 		
 		<div id="footer">
-		      <?= date('Y')?>
+		      <?= $year1;?>
 			<p>Copyright &copy; <em>minimalistica</em> &middot; Design: Luka Cvrk, <a href="http://www.solucija.com/" title="Free CSS Templates">Solucija</a></p>
 		</div>	
 	</div>
